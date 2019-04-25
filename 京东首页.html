@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<style type="text/css">
+			html {
+				font-size: calc(100vw/7.5);
+			}
+			
+			body {
+				margin: 0;
+			}
+			
+			.search-bar {
+				top: 0;
+				width: 100%;
+				height: 0.88rem;
+				display: flex;
+				position: fixed;
+				z-index: 99999;
+			}
+			
+			.search-bar.fixed {
+				background-color: #e43130;
+			}
+			
+			.search-bar>div {
+				float: left;
+			}
+			
+			.search-form {
+				width: 5.1rem;
+				padding-top: 0.14rem;
+				box-sizing: border-box;
+			}
+			
+			.search-form input {
+				width: 100%;
+				float: left;
+				height: 0.6rem;
+				border: none;
+				border-radius: 0.3rem;
+				box-sizing: border-box;
+			}
+			
+			.menu,
+			.login {
+				width: 1.2rem;
+				height: 0.88rem;
+				text-align: center;
+				line-height: 0.88rem;
+				font-size: 0.28rem;
+				color: #FFFFFF;
+				/*background-color: blue;*/
+			}
+			
+			.swiper-container img {
+				width: 100%;
+				float: left;
+			}
+			
+			.quick-nav {
+				/*background-color: yellow;*/
+				padding-bottom: 0.2rem;
+			}
+			
+			.quick-nav ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.quick-nav ul:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.quick-nav ul li {
+				width: 20%;
+				float: left;
+				list-style: none;
+				text-align: center;
+			}
+			
+			.quick-nav ul li img {
+				width: 0.8rem;
+				height: 0.8rem;
+				padding-top: 0.2rem;
+			}
+			
+			.quick-nav ul li a {
+				display: block;
+				text-decoration: none;
+				font-size: 0.24rem;
+				color: #666;
+			}
+			
+			.quick-nav ul li a div {
+				padding-top: 0.12rem;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 1rem;
+				position: fixed;
+				background-color: gainsboro;
+				bottom: 0;
+			}
+			.footer ul li a img{
+				width: 110px;
+				height: 1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="search-bar">
+			<div class="menu">菜单</div>
+			<div class="search-form">
+				<input type="" name="" id="" value="" />
+			</div>
+			<div class="login">登录</div>
+		</div>
+
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/swiper_1.jpg"></div>
+				<div class="swiper-slide"><img src="images/swiper_2.jpg"></div>
+				<div class="swiper-slide"><img src="images/swiper_3.jpg"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="quick-nav">
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/nav_1.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_2.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_3.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_4.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_1.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_3.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_2.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_4.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_1.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/nav_1.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+			</ul>
+			<div class="footer">
+				<ul>
+					<li>
+						<a>
+							<img src="images/55.png" />
+							<div>首页</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/56.png" />
+							<div>首页</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/57.png" />
+							<div>首页</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/58.png" />
+							<div>首页</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/59.png" />
+							<div>首页</div>
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+
+		<div style="height: 1000px;">
+
+		</div>
+
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+			var searchBar = document.querySelector(".search-bar");
+
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+
+			window.addEventListener('scroll', function() {
+				var t = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+
+				if(t > 50) {
+					searchBar.setAttribute("class", "search-bar fixed");
+				} else {
+					searchBar.setAttribute("class", "search-bar");
+				}
+
+			});
+		</script>
+	</body>
+
+</html>
